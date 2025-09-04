@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maamatha Kethavath</title>
+  <link rel="icon" href="./pic.webp">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    nav {
+      position: fixed;
+      width: 100%;
+      background-color: rgba(72, 67, 67, 0.7); /* Translucent dark gray */
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      padding: 1rem 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.08em;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+      padding-top: 3rem;
+      align-items: center;
+      justify-content: center;
+      background: white;
+    }
+
+    .left-image {
+      flex: 1;
+      min-width: 500px;
+      max-width: 750px;
+      overflow: hidden;
+    }
+
+    .left-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .right-content {
+      flex: 1;
+      max-width: 800px;
+      padding: 2rem;
+      margin-top: 2.9rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .right-content h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      letter-spacing: 0.07em;
+      background: linear-gradient(90deg, #144343, #2e2e4d);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    .right-content p.subtitle {
+      font-family: monospace;
+      font-size: 1.1rem;
+      margin-bottom: .5rem;
+    }
+
+    .btn-hire {
+      background-color: #96385e;
+      color: #2a1414;
+      border: none;
+      padding: 0.7rem 2.3rem;
+      font-size: 1.8rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-bottom: 2rem;
+      margin-top: 2.9rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-hire:hover {
+      background-color: #b34e7a;
+      color: white;
+    }
+
+    .description {
+      font-family: Georgia, serif;
+      font-size: 1.55rem;
+      margin-bottom: .5rem;
+      margin-top: 1.9rem;
+      color: #623a36;
+      max-width: 1200px;
+      line-height: 1.5;
+    }
+
+    .btn-resume {
+      background-color: #462a44;
+      color: #dcdcdc;
+      border: none;
+      padding: 0.75rem 2.5rem;
+      font-size: 1.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 1.9rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-resume:hover {
+      background-color: #613351;
+      color: white;
+    }
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        padding-top: 8rem;
+      }
+
+      .left-image,
+      .right-content {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .right-content h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        gap: 1.5rem;
+        padding: 0.8rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="./index.html">HOME</a>
+    <a href="./aboutme.html">ABOUT ME</a>
+    <a href="./projects.html">PROJECTS</a>
+    <a href="./skills.html">SKILLS</a>
+    <a href="./experience.html">EXPERIENCE</a>
+    <a href="./contactme.html">CONTACT</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="left-image">
+      <img src="./pic.webp" alt="Profile Photo" />
+    </div>
+
+    <div class="right-content">
+      <h1><span>MAMATHA</span> KETHAVATH</h1>
+      <p class="subtitle">Java Fullstack Developer | AI Intern</p>
+      <button class="btn-hire">→ HIRE ME ←</button>
+      <p class="description">
+        I am a Computer Science student with experience in AI chatbot development and dashboards.
+      </p>
+      <button class="btn-resume">DOWNLOAD RESUME</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
